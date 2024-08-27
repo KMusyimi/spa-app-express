@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="style.css">
+    <title>Single Page App</title>
+<script defer src="/runtime.js"></script></head>
+
+<body>
+    <nav class="nav">
+        <!-- data-link history api push state method  -->
+        <a href="/" data-link class="nav__link">Dashboard</a>
+        <a href="/posts" data-link class="nav__link">Posts</a>
+        <a href="/settings" data-link class="nav__link">Settings</a>
+    </nav>
+    <div id="content"></div>
+    <script type="module" src="/static/index.js"></script>
+</body>
+
+</html>
