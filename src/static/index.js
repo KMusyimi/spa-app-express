@@ -13,6 +13,13 @@ const router = async () =>
             isMatch: location.pathname === route.path
         }
     });
+    if (!match)
+    {
+        match = {
+            route: routes[0],
+            result: [location.pathname],
+        }
+    }
     console.log('potentialMatches :>> ', potentialMatches);
 };
 
